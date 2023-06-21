@@ -1,1 +1,5 @@
-
+def is_palindrome(s):
+    return s == s[::-1]
+s = input("введите слово: ")
+print(f"{s} это слово является палиндромом" if
+is_palindrome(s) else "это слово не является палиндромом")
