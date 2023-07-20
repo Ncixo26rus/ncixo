@@ -1,0 +1,12 @@
+% extends 'base.html' %}
+{% block content %}
+  <!-- Ваш предыдущий контент -->
+  <p class="custom-paragraph">Ваш текст здесь</p>
+{% endblock %}
+  .custom-paragraph {
+   font-size: 24px;
+   font-style: italic;
+   text-align: center;
+   color: green;
+   text-shadow: 2px 2px 4px #008000;
+}
