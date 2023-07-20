@@ -1,0 +1,12 @@
+python manage.py startapp app_lesson_4
+cd app_lesson_4
+from django.http import HttpResponse
+def lesson_4_view(request):
+    return HttpResponse("Домашка по 4 занятию")
+from app_lesson_4.views import lesson_4_view\
+urlpatterns = [
+    # другие URL-шаблоны вашего проекта
+    path('lesson_4/', lesson_4_view, name='lesson_4'),
+    # другие URL-шаблоны вашего проекта
+]
+python manage.py runserver
