@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
+    Ваш контент здесь
+{% endblock %}
+<a href="{% url 'имя_вашего_представления' %}">Ваша ссылка</a>
